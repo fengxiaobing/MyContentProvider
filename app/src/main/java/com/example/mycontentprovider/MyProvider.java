@@ -58,8 +58,8 @@ public class MyProvider extends ContentProvider{
         db.execSQL("insert into user values(2,'Kobe');");
 
         db.execSQL("delete from job");
-        db.execSQL("insert into job values(1,'Android');");
-        db.execSQL("insert into job values(2,'iOS');");
+        db.execSQL("insert into job values(1,'Android','oooo');");
+        db.execSQL("insert into job values(2,'iOS','ppppp');");
 
         return true;
     }

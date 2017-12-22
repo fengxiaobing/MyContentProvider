@@ -67,7 +67,7 @@ Handler handler;
                 ContentValues values = new ContentValues();
                 values.put("_id", 3);
                 values.put("name", "Iverson");
-//                values.put("job", "Iverson");
+//                values.put("job", "333");
                 // 获取ContentResolver
 
                 // 通过ContentResolver 根据URI 向ContentProvider中插入数据

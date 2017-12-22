@@ -28,7 +28,11 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         // 创建两个表格:用户表 和职业表
         db.execSQL("CREATE TABLE IF NOT EXISTS " + USER_TABLE_NAME + "(_id INTEGER PRIMARY KEY AUTOINCREMENT," + " name TEXT)");
-        db.execSQL("CREATE TABLE IF NOT EXISTS " + JOB_TABLE_NAME + "(_id INTEGER PRIMARY KEY AUTOINCREMENT," + " job TEXT)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS "
+                + JOB_TABLE_NAME + "("
+                +"_id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                +"name TEXT,"
+                + " job TEXT)");
     }
 
     @Override
